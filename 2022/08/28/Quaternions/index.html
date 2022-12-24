@@ -9,15 +9,15 @@
   
   <title>Quaternions | PhyDuck的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介传说中,四元数是爱尔兰数学家哈密顿在研究复数的三维形式(三元数)时,在都柏林的皇家运河上散步时突然想到的,他把 i^2&#x3D;j^2&#x3D;k^2&#x3D;ijk\tag{1.1}刻在了附近的布鲁穆桥上.我们现在所用的矢量分析正是脱胎于四元数,在历史中,四元数在与矢量分析的较量中中失败了,大多数人抛弃了使用四元数这一更基本的概念而转向了看似更简单的矢量分析.事实上,如果你使用四元数,你就会发现,点乘叉乘,散度旋度">
+  <meta name="description" content="博客对公式的支持还是不是太好，大家可以下载pdf下载PDF  	      	    简介传说中,四元数是爱尔兰数学家哈密顿在研究复数的三维形式(三元数)时,在都柏林的皇家运河上散步时突然想到的,他把 i^2&#x3D;j^2&#x3D;k^2&#x3D;ijk\tag{1.1}刻在了附近的布鲁穆桥上.我们现在所用的矢量分析正是脱胎于四元数,在历史中,四元数在与矢量分析的较量中中失败了,大多数人抛弃了使用四元数这一更基本的概念">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Quaternions">
 <meta property="og:url" content="https://phyduck.github.io/2022/08/28/Quaternions/index.html">
 <meta property="og:site_name" content="PhyDuck的博客">
-<meta property="og:description" content="简介传说中,四元数是爱尔兰数学家哈密顿在研究复数的三维形式(三元数)时,在都柏林的皇家运河上散步时突然想到的,他把 i^2&#x3D;j^2&#x3D;k^2&#x3D;ijk\tag{1.1}刻在了附近的布鲁穆桥上.我们现在所用的矢量分析正是脱胎于四元数,在历史中,四元数在与矢量分析的较量中中失败了,大多数人抛弃了使用四元数这一更基本的概念而转向了看似更简单的矢量分析.事实上,如果你使用四元数,你就会发现,点乘叉乘,散度旋度">
+<meta property="og:description" content="博客对公式的支持还是不是太好，大家可以下载pdf下载PDF  	      	    简介传说中,四元数是爱尔兰数学家哈密顿在研究复数的三维形式(三元数)时,在都柏林的皇家运河上散步时突然想到的,他把 i^2&#x3D;j^2&#x3D;k^2&#x3D;ijk\tag{1.1}刻在了附近的布鲁穆桥上.我们现在所用的矢量分析正是脱胎于四元数,在历史中,四元数在与矢量分析的较量中中失败了,大多数人抛弃了使用四元数这一更基本的概念">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-08-28T09:48:39.000Z">
-<meta property="article:modified_time" content="2022-12-24T15:48:25.550Z">
+<meta property="article:modified_time" content="2022-12-24T15:52:21.281Z">
 <meta property="article:author" content="PhyDuck">
 <meta property="article:tag" content="Electrodynamics">
 <meta name="twitter:card" content="summary">
@@ -93,7 +93,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>传说中,四元数是爱尔兰数学家哈密顿在研究复数的三维形式(三元数)时,在都柏林的皇家运河上散步时突然想到的,他把</p>
+        <p>博客对公式的支持还是不是太好，大家可以下载pdf<br><a href="/pdf/Quaternions.pdf">下载PDF</a><br>
+
+	<div class="row">
+    <embed src="/pdf/Quaternions.pdf" width="100%" height="550" type="application/pdf">
+	</div>
+
+
+</p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>传说中,四元数是爱尔兰数学家哈密顿在研究复数的三维形式(三元数)时,在都柏林的皇家运河上散步时突然想到的,他把</p>
 <script type="math/tex; mode=display">i^2=j^2=k^2=ijk\tag{1.1}</script><p>刻在了附近的布鲁穆桥上.我们现在所用的矢量分析正是脱胎于四元数,在历史中,四元数在与矢量分析的较量中中失败了,大多数人抛弃了使用四元数这一更基本的概念而转向了看似更简单的矢量分析.事实上,如果你使用四元数,你就会发现,点乘叉乘,散度旋度等等都是非常自然的东西罢了.</p>
 <p>我在电动力学的笔记中写了很多”由矢量分析恒等式xxx”,但是并没有给出证明(常用的矢量分析恒等式见附录),因为一些恒等式的证明实在复杂,或者有一些田老师也只是给出了一些不严谨的证明.借这个机会,不妨来使用四元数去证明这些恒等式,通过这个过程,你也将感受到四元数在处理这些问题上的一致性(几乎所有公式都是由四元数的一个性质来证明的).</p>
 <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>首先来介绍一下四元数的基本概念.一个四元数a可以定义为</p>
