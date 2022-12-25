@@ -116,7 +116,8 @@
 </article>
 
 
- 
+
+
   
     <article id="post-Quaternions" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -279,7 +280,8 @@
 </article>
 
 
- 
+
+
   
 
 
@@ -379,6 +381,29 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+      el: '.vcomment',
+      notify: notify,
+      verify: verify,
+      appId: "lSAogXxcPmDIY12xU0Ojwd5L-gzGzoHsz",
+      appKey: "IrpbkPNlZ7FOPPHrWmNRFShq",
+      placeholder: "给我的文章加点评论吧~",
+      pageSize: '10',
+      avatar: 'mm',
+      lang: 'zh-cn',
+      visitor: 'true'
+    });
+  </script>
 
   </div>
 <script type="text/x-mathjax-config">
