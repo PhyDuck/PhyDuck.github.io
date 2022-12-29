@@ -6,7 +6,7 @@
   <link href="https://phyduck.github.io/atom.xml" rel="self"/>
   
   <link href="https://phyduck.github.io/"/>
-  <updated>2022-12-27T15:54:19.248Z</updated>
+  <updated>2022-12-29T15:11:35.077Z</updated>
   <id>https://phyduck.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Quantum Mechanics</title>
+    <link href="https://phyduck.github.io/2022/12/29/Quantum-Mechanics/"/>
+    <id>https://phyduck.github.io/2022/12/29/Quantum-Mechanics/</id>
+    <published>2022-12-29T14:48:39.000Z</published>
+    <updated>2022-12-29T15:11:35.077Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一篇关于量子力学的note，提供电子版和其预览</p><p>&lt;a href=”/pdf/Quantum_Mechanics.pdf&gt;下载PDF&lt;/a&gt;<br><div class="row">    <embed src="/pdf/Quantum_Mechanics.pdf" width="100%" height="550" type="application/pdf"></div></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这是一篇关于量子力学的note，提供电子版和其预览&lt;/p&gt;
+&lt;p&gt;&amp;lt;a href=”/pdf/Quantum_Mechanics.pdf&amp;gt;下载PDF&amp;lt;/a&amp;gt;&lt;br&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;/pdf/Q</summary>
+      
+    
+    
+    
+    
+    <category term="Quantum Mechanics" scheme="https://phyduck.github.io/tags/Quantum-Mechanics/"/>
+    
+  </entry>
   
   <entry>
     <title>Classical Electrodynamics Review Note</title>
