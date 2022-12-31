@@ -8,5 +8,5 @@ https://phyduck.github.io/New-Page/index.html
 https://phyduck.github.io/
 https://phyduck.github.io/tags/Electrodynamics/
 https://phyduck.github.io/tags/Classical-Mechanics/
-https://phyduck.github.io/tags/Statistical-Mechanics/
 https://phyduck.github.io/tags/Quantum-Mechanics/
+https://phyduck.github.io/tags/Statistical-Mechanics/
