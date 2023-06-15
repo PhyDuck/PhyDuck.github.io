@@ -6,7 +6,7 @@
   <link href="https://phyduck.github.io/atom.xml" rel="self"/>
   
   <link href="https://phyduck.github.io/"/>
-  <updated>2023-04-21T09:35:00.359Z</updated>
+  <updated>2022-12-31T05:18:22.677Z</updated>
   <id>https://phyduck.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>电子显微镜的成像</title>
-    <link href="https://phyduck.github.io/2023/04/21/TEM%20note/TEM/"/>
-    <id>https://phyduck.github.io/2023/04/21/TEM%20note/TEM/</id>
-    <published>2023-04-21T09:35:00.353Z</published>
-    <updated>2023-04-21T09:35:00.359Z</updated>
-    
-    <content type="html"><![CDATA[<p>::: large</p><h1 id="正空间与倒空间的两个关系"><a href="#正空间与倒空间的两个关系" class="headerlink" title="正空间与倒空间的两个关系"></a>正空间与倒空间的两个关系</h1><p>首先我们熟知的是，正空间的某一晶面$(hkl)$的长度等于倒易空间的一个倒易矢量的长度的倒数，即</p><script type="math/tex; mode=display">d_{hkl}=\frac{1}{\abs{\vb*{G}_{hkl}}}=\frac{1}{\abs{h\vb*{a^*}+k\vb*{b^*}+l\vb*{c^*}}}</script><p>且$\vb*{G}_{hkl}$垂直$(hkl)$晶面（这里就不证明了）。</p><p>由此我们还可以得到另一个关系，也就是晶带定律。<br>考虑正空间的若干面（晶面族）$(hkl)$，若其都与某一直线平行（或平移后相交于某一直线），我画了一个图示意一下（哈哈哈有点丑）</p><p><img src="figc.pdf" alt="晶带定律">{width=”3cm”}</p><p>图中三个面均过$[u\,v\,w]$，则称这些面组成一个晶带，而$[u\,v\,w]$为他们的晶带轴。</p><p>注意到图中这若干个面均对应一倒格矢，这些倒格矢均在垂直于$[u\,v\,w]$的一个平面内，这是一个二维的倒易点阵平面$(u v w)^<em>$，晶带中的每一个平面都是这个倒易平面点阵上的倒格矢（若已选定某一点为原点，则每一个平面对应这个点阵上的一个点），对于$(hkl)$面，有倒格矢$\vb</em>{G}_{hkl}=h\vb<em>{a^</em>}+k\vb<em>{b^</em>}+l\vb<em>{c^</em>}$，其与晶带轴$\vb<em>{z}=u\vb</em>{a}+v\vb<em>{b}+w\vb</em>{c}$垂直，于是</p><script type="math/tex; mode=display">\vb*{G}_{hkl}\cdot \vb*{z}\propto hu+kv+lw=0$$ 这就是晶带定律。综合以上，倒易点阵中的一个倒格矢对应着正空间的某一晶面，而某一倒易点阵平面对应着正空间的一个晶带。# 透射电子显微镜的结构透射电子显微镜的结构图如下![结构图](fige.png){width="7cm"}虽然这看起来很复杂，但是实际上可以分为几大部分，首先是电子枪，电子从电子枪中逸出，而后经过加速电场加速，通过聚光镜照射到样品上，当然这里的所有透镜都不是普通的光学透镜，用到的是磁控制。透射和衍射电子被成像系统的透镜放大，成像，可以根据需要使用衍射模式和成像模式，光路图如下：![衍射和透射的光路图](figf.png){width="5cm"}如图$(b)$所示，根据阿贝成像原理，光经过光栅的透射光由于光栅的周期性结构（在此电子显微镜光路中，具有周期性结构的样品的晶格充当了光栅）所以相同的衍射级次构成一组平行光，该平行光经过透镜汇聚在了后焦面的若干点上，而后相同位置发出的光又汇聚到了同一点，如$I_1,I_0,I'_1$所以如果投射镜将后焦面上的衍射点投射到荧光屏上，将看到衍射图样，而如果将成的像透射，则会看到一倒立的实像。# 电子衍射被加速的电子可以看作德布罗意波，当其打到晶体上时会发生透射（在阵点之间穿过）和反射（被晶格散射），反射波之间差一相位差，因此会发生衍射。如下图所示![电子被晶体点阵散射](figa.png){width="6cm"}图中$O,R$为两相邻晶面上对应的两个点，晶面间距为$d$，设此面为$(hkl)$面，为了更准确的表示，下面使用$d_{hkl}$考虑$AOA'$与$BRB''$的衍射，实际上从入射束出发，后者比前者多走的光程是$SR+RT$，即$$\Delta=2d_{hkl}\sin\theta$$ 由衍射条件 $$2d_{hkl}\sin\theta=n\lambda</script><p>时，会出现衍射图案，也就是衍射极强。为了方便起见，我们可以设</p><script type="math/tex; mode=display">d=d_{hkl,n}=\frac{d_{hkl}}{n}$$ 这样式(4)改写为$$2d\sin\theta=\lambda</script><p>所以所有的衍射都可以看为晶面间距为$d$的一级衍射，具体$n$的数值我们在数据处理的时候再来考虑。</p><p>对于晶面间距$d$，我们知道倒易空间的一个倒易矢量的长度等于正空间晶面间距的倒数，即</p><script type="math/tex; mode=display">\abs{\vb*{G}_{hkl}}=\abs{h\vb*{a^*}+k\vb*{b^*}+l\vb*{c^*}}=\frac{1}{d_{hkl}}</script><p>且$\vb*{G}_{hkl}$垂直$(hkl)$晶面。注意到这里面我们用到的是$d=d_{hkl}/n$，所以为了方便可以定义</p><script type="math/tex; mode=display">\vb*{g}=n\vb*{G}_{hkl}</script><p>现在我们来使用一种更为直观的图形来描述式(6)：首先改写为</p><script type="math/tex; mode=display">\sin\theta=\frac{1/d}{2/\lambda}</script><p>可以让$1/d$作为顶角为$\theta$的对边，$2/\lambda$作为斜边，形成一个直角三角形，如下图</p><p>::: center<br>:::</p><p>注意到实际上$\lambda$是给定的，对于不同的晶面间距$d$，体现在三角形上的是$OG$的移动，$\theta$的变化，而此直角三角形依然存在，所以可以设想，在$d$的变化中，实际上$OA$是不变的，而为了保持这个直角三角形，$G$必然在一以$OA$的一半为圆心，$1/\lambda$为半径的圆上，这种方法也称艾瓦德作图法。</p><p><img src="figb.png" alt="艾瓦德作图法">{width=”5cm”}</p><p>图中$K_{\theta}$代表了入射（透射）束，$\vb<em>{K_g}$代表了衍射束，而$\vb</em>{g}$实际上是一个倒格矢，由此可以得到一晶面。</p><p><img src="figh.jpeg" alt="image">{width=”5cm”}</p><h1 id="衍射图像"><a href="#衍射图像" class="headerlink" title="衍射图像"></a>衍射图像</h1><p>在衍射后，我们可以在荧光屏上看到若干个亮点（假设接收屏是荧光屏，运动的电子打到荧光屏上会使荧光材料激发，在其跃迁回稳态时发光）通过分析衍射图像，我们可以得到晶体几何结构的一些信息。</p><p><img src="figd.png" alt="电子衍射的几何关系">{width=”5cm”}</p><p><img src="figg.png" alt="image">{width=”3cm”}</p><p>实际上，我们并不是在$G$处接收电子，而是在距离样品等效位置为$L$的位置接收（当然，在这中间有着若干个磁汇聚机制，充当透镜，不然他是没法聚焦放大的。但是为了简单在图6中略去了各级透镜的折射光线），也就是$L$不一定为样品到荧光屏的距离，这与各级透镜有关，$L$称为相机常数。在没有中间镜和投影镜时，若物镜紧挨试样，则相机常数为物镜的焦距$f$，在经过放大后应再乘以逐级的放大倍数，即$L\propto fM_1M_2$，这个对于一定的透镜（磁机制）是固定的，一般是已知的，若未知可以使用标准品来标定。通过测量荧光屏上的$O’’G’’$的距离，经过换算可以得到样品的信息。下面给出换算的关系。由几何关系：</p><script type="math/tex; mode=display">r=L\tan2\theta\approx2L\theta$$ 而在圆里：$$\frac{1}{d}=\frac{2}{\lambda}\sin\theta\approx \frac{2}{\lambda}\theta</script><p>将(11)带入(10)： <script type="math/tex">r=\frac{L\lambda}{d}</script><br>入射光波长和相机常数一般都是已知的，所以通过测量$r$即可得到晶面间距。而晶格的周期性排列使得荧光屏上的图案是周期性的倒易点阵，倒易点阵上的每一个阵点（预先已确定一原点时）都表明了正空间的一晶面，而这些晶面是同属于一个晶带的。</p><p><img src="figi.png" alt="衍射图像">{width=”10cm”}</p><p>图中最亮的就是没有经过衍射的点，是倒易点阵的中心，其余点为衍射点，通过测量衍射点的距离和夹角，就可以得到例如每一个点属于哪个晶面这些特征。<br>:::</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;::: large&lt;/p&gt;
-&lt;h1 id=&quot;正空间与倒空间的两个关系&quot;&gt;&lt;a href=&quot;#正空间与倒空间的两个关系&quot; class=&quot;headerlink&quot; title=&quot;正空间与倒空间的两个关系&quot;&gt;&lt;/a&gt;正空间与倒空间的两个关系&lt;/h1&gt;&lt;p&gt;首先我们熟知的是，正空间的</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Quantum Mechanics</title>
@@ -60,29 +39,6 @@
     
     
     <category term="Quantum Mechanics" scheme="https://phyduck.github.io/tags/Quantum-Mechanics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>USTB</title>
-    <link href="https://phyduck.github.io/2022/12/29/111/"/>
-    <id>https://phyduck.github.io/2022/12/29/111/</id>
-    <published>2022-12-29T14:48:39.000Z</published>
-    <updated>2023-02-26T14:25:14.165Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="北科大简介"><a href="#北科大简介" class="headerlink" title="北科大简介"></a>北科大简介</h1><p>111北京钢铁学院111u</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;北科大简介&quot;&gt;&lt;a href=&quot;#北科大简介&quot; class=&quot;headerlink&quot; title=&quot;北科大简介&quot;&gt;&lt;/a&gt;北科大简介&lt;/h1&gt;&lt;p&gt;111北京钢铁学院111u&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="USTB" scheme="https://phyduck.github.io/tags/USTB/"/>
     
   </entry>
   
