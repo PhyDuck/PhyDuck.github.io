@@ -1,4 +1,6 @@
 https://phyduck.github.io/about/index.html
+https://phyduck.github.io/publication/index.html
+https://phyduck.github.io/pdf/index.html
 https://phyduck.github.io/2022/12/29/Quantum-Mechanics/
 https://phyduck.github.io/2022/06/01/Statical-Mechanics/
 https://phyduck.github.io/2022/06/04/Introduction%20to%20Classical%20Mechanics/
